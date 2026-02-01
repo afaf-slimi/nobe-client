@@ -1,21 +1,13 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainLayout from "./components/layout/MainLayout";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./router/AppRouter";
 
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import Bookings from "./pages/Bookings";
-
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
-      <MainLayout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/bookings" element={<Bookings />} />
-        </Routes>
-      </MainLayout>
+      <AppRouter />
     </BrowserRouter>
   );
 }
+
+export default App;
 
