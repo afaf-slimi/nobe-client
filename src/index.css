@@ -1,96 +1,29 @@
-/* ===============================
-   RESET + BASE
-================================ */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html,
-body,
-#root {
-  min-height: 100%;
-  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+/* نحي ألوان VITE الافتراضية */
+:root {
+  color-scheme: dark;
 }
 
-/* ===============================
-   BODY BACKGROUND (CALM)
-================================ */
 body {
-  background: linear-gradient(
-    120deg,
-    #020617,
-    #020617
-  );
+  font-family: system-ui, sans-serif;
+  background-color: #0f172a; /* dark clean */
   color: #e5e7eb;
 }
 
-/* ===============================
-   BUTTON RESET (IMPORTANT)
-================================ */
-button {
-  font-family: inherit;
-  background: none;
-  border: none;
-  outline: none;
-  color: inherit;
-}
-
-/* ===============================
-   INPUT RESET
-================================ */
-input {
-  font-family: inherit;
-  background: none;
-  border: none;
-  outline: none;
-  color: inherit;
-}
-
-/* ===============================
-   LINKS
-================================ */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* ===============================
-   REMOVE UGLY DEFAULT FOCUS
-================================ */
-:focus-visible {
-  outline: none;
-}
-
-/* ===============================
-   SCROLLBAR (SOFT)
-================================ */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,0.15);
-  border-radius: 999px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255,255,255,0.25);
-}
-
-/* ===============================
-   GLOBAL TRANSITIONS (SMOOTH)
-================================ */
-button,
-input {
-  transition: 
-    background-color 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease,
-    transform 0.2s ease;
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
 }

@@ -3,11 +3,11 @@ import "./AuthLayout.css";
 
 export default function AuthLayout() {
   return (
-    <div className="auth-bg">
-      <div className="auth-card">
-        <Outlet />
-      </div>
+    <div className="auth-layout">
+      <Outlet />
     </div>
   );
 }
+
+
 
