@@ -1,3 +1,9 @@
-.main-container {
-  padding: 1rem;
+.layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #020617, #020617);
+  color: white;
+}
+
+.content {
+  padding: 40px;
 }

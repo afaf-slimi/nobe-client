@@ -1,2 +1,4 @@
-.hero { padding: 40px; }
-.features { display: flex; gap: 20px; }
+.home h1 {
+  font-size: 36px;
+}
+

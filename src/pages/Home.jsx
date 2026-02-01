@@ -1,14 +1,11 @@
-<div className="home">
-  <section className="hero">
-    <h1>Easy Booking Platform</h1>
-    <p>Connect users and clients easily</p>
-    <button>Start Booking</button>
-  </section>
+import "./Home.css";
 
-  <section className="features">
-    <div className="card">Fast</div>
-    <div className="card">Accessible</div>
-    <div className="card">Secure</div>
-  </section>
-</div>
+export default function Home() {
+  return (
+    <div className="home">
+      <h1>Welcome</h1>
+      <p>Book services easily.</p>
+    </div>
+  );
+}
 

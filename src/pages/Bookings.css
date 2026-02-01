@@ -1,19 +1,20 @@
-.bookings {
+.bookings h1 {
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
   padding: 20px;
+  margin-bottom: 15px;
+  max-width: 400px;
 }
 
-.bookings h2 {
-  margin-bottom: 10px;
+.confirmed span {
+  color: #22c55e;
 }
 
-.bookings ul {
-  list-style: none;
-  padding: 0;
-}
-
-.bookings li {
-  padding: 10px;
-  border: 1px solid #ddd;
-  margin-bottom: 8px;
-  border-radius: 6px;
+.pending span {
+  color: #eab308;
 }
