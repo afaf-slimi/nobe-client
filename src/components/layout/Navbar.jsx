@@ -3,14 +3,13 @@ import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <header className="navbar">
-      <h1>NOBE</h1>
-      <nav>
+    <nav className="navbar">
+      <h2>NOBE</h2>
+      <div>
         <Link to="/">Home</Link>
         <Link to="/bookings">Bookings</Link>
-        <Link to="/login">Login</Link>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 }
 

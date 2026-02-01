@@ -1,12 +1,15 @@
-import Navbar from "./Navbar";
+import { Outlet } from "react-router-dom";
+import Navbar from "../Navbar.jsx";
 
-export default function MainLayout({ children }) {
+import "./MainLayout.css";
+
+export default function MainLayout() {
   return (
-    <div>
+    <>
       <Navbar />
-      <main style={{ padding: "60px 40px" }}>{children}</main>
-    </div>
+      <main className="main-container">
+        <Outlet />
+      </main>
+    </>
   );
 }
-
-

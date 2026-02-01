@@ -1,14 +1,13 @@
+import { Outlet } from "react-router-dom";
 import "./AuthLayout.css";
 
-export default function AuthLayout({ children }) {
+export default function AuthLayout() {
   return (
-    <div className="auth-scene">
-      <div className="auth-frame">
-        <div className="auth-border"></div>
-        <div className="auth-card">
-          {children}
-        </div>
+    <div className="auth-bg">
+      <div className="auth-card">
+        <Outlet />
       </div>
     </div>
   );
 }
+

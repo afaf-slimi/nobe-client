@@ -1,14 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
-
+/* ===============================
+   RESET + BASE
+================================ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  font-family: 'Inter', sans-serif;
-  background: radial-gradient(circle at top, #10162f, #0b0f1a);
-  color: white;
-  min-height: 100vh;
+html,
+body,
+#root {
+  min-height: 100%;
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* ===============================
+   BODY BACKGROUND (CALM)
+================================ */
+body {
+  background: linear-gradient(
+    120deg,
+    #020617,
+    #020617
+  );
+  color: #e5e7eb;
+}
+
+/* ===============================
+   BUTTON RESET (IMPORTANT)
+================================ */
+button {
+  font-family: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+/* ===============================
+   INPUT RESET
+================================ */
+input {
+  font-family: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+/* ===============================
+   LINKS
+================================ */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===============================
+   REMOVE UGLY DEFAULT FOCUS
+================================ */
+:focus-visible {
+  outline: none;
+}
+
+/* ===============================
+   SCROLLBAR (SOFT)
+================================ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+/* ===============================
+   GLOBAL TRANSITIONS (SMOOTH)
+================================ */
+button,
+input {
+  transition: 
+    background-color 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.2s ease;
 }
