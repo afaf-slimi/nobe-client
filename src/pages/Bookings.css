@@ -1,0 +1,20 @@
+.booking-card {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.booking-card h2 {
+  margin-bottom: 12px;
+  color: #1f2937;
+  font-size: 24px;
+}
+
+.booking-card p {
+  color: #6b7280;
+  font-size: 16px;
+}
