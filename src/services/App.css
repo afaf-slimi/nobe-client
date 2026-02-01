@@ -1,0 +1,10 @@
+.app-shell {
+  min-height: 100vh;
+  background: #f6f7f9;
+}
+
+.app-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 2rem;
+}

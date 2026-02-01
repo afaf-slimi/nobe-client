@@ -1,0 +1,107 @@
+.hero-wrapper {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #1b2440, #050816 70%);
+}
+
+.hero-frame {
+  padding: 60px;
+  border-radius: 28px;
+  background: linear-gradient(
+    135deg,
+    rgba(124, 124, 255, 0.25),
+    rgba(0, 247, 255, 0.12)
+  );
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 30px 80px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(18px);
+}
+
+.hero {
+  max-width: 720px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.booking-word {
+  font-weight: 800;
+  background: linear-gradient(90deg, #7c7cff, #00f7ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.dynamic-title {
+  margin-top: 14px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #e0e6ff;
+}
+
+.hero p {
+  margin: 20px 0 32px;
+  font-size: 18px;
+  color: #cbd5ff;
+  line-height: 1.6;
+}
+
+.primary-btn {
+  padding: 14px 34px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  background: linear-gradient(90deg, #7c7cff, #00f7ff);
+  color: #000;
+  box-shadow: 0 10px 30px rgba(0, 247, 255, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0, 247, 255, 0.6);
+}
+
+/* Mode switch */
+.mode-switch {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.mode-switch button {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.mode-switch button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Glows */
+.glow-user {
+  box-shadow: 0 0 80px rgba(0, 247, 255, 0.25);
+}
+
+.glow-provider {
+  box-shadow: 0 0 80px rgba(124, 124, 255, 0.25);
+}
+
+.glow-company {
+  box-shadow: 0 0 80px rgba(0, 255, 160, 0.25);
+}

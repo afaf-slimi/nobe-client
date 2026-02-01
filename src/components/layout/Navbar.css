@@ -1,0 +1,30 @@
+.navbar {
+  height: 70px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.navbar h1 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #7c7cff;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #00f7ff;
+  opacity: 1;
+}
