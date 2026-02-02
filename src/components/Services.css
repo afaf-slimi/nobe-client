@@ -1,15 +1,14 @@
-.services-section {
-  padding: 60px 80px;
-  background: radial-gradient(circle at top, #0b1220, #020617);
+.services {
+  padding: 80px 60px;
   color: white;
 }
 
-.services-section h2 {
+.services h2 {
   font-size: 36px;
   margin-bottom: 10px;
 }
 
-.services-section p {
+.subtitle {
   opacity: 0.7;
   margin-bottom: 40px;
 }
@@ -17,48 +16,53 @@
 /* GRID */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
 }
 
 /* CARD */
 .service-card {
-  position: relative;
-  border-radius: 18px;
+  background: #020617;
+  border-radius: 22px;
   overflow: hidden;
-  cursor: pointer;
-  aspect-ratio: 4 / 3;
-  background: #000;
-  transition: transform 0.3s ease;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  transition: all 0.35s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-10px);
 }
 
 /* IMAGE */
 .service-card img {
   width: 100%;
-  height: 100%;
+  height: 180px;
   object-fit: cover;
-  display: block;
 }
 
-/* OVERLAY */
-.service-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.1)
-  );
-  display: flex;
-  align-items: flex-end;
+/* CONTENT */
+.service-content {
   padding: 20px;
 }
 
-.service-overlay h3 {
+.service-content h3 {
   font-size: 20px;
-  font-weight: 600;
+  margin-bottom: 15px;
 }
+
+/* BUTTON */
+.service-content button {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border: none;
+  color: #022c22;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-content button:hover {
+  opacity: 0.9;
+}
+

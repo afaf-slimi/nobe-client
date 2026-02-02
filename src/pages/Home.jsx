@@ -1,6 +1,8 @@
-import "./home.css";
+// src/pages/Home.jsx
+import "./Home.css";
 
-// imports الصور
+import hero from "../assets/services/hero.jpg";
+
 import doctor from "../assets/services/doctor.jpg";
 import event from "../assets/services/event.jpg";
 import express from "../assets/services/express.jpg";
@@ -14,44 +16,66 @@ import transport from "../assets/services/transport.jpg";
 import vet from "../assets/services/vet.jpg";
 
 const services = [
-  { title: "Doctor", img: doctor },
-  { title: "Events", img: event },
-  { title: "Express", img: express },
-  { title: "Gym", img: gym },
-  { title: "Haircut", img: haircut },
-  { title: "Home Services", img: home },
-  { title: "Hotel", img: hotel },
-  { title: "Mechanic", img: mechanic },
-  { title: "Training", img: training },
-  { title: "Transport", img: transport },
-  { title: "Veterinary", img: vet },
+  { title: "Doctor", image: doctor },
+  { title: "Events", image: event },
+  { title: "Express Delivery", image: express },
+  { title: "Gym", image: gym },
+  { title: "Haircut", image: haircut },
+  { title: "Home Services", image: home },
+  { title: "Hotel", image: hotel },
+  { title: "Mechanic", image: mechanic },
+  { title: "Training", image: training },
+  { title: "Transport", image: transport },
+  { title: "Veterinary", image: vet },
 ];
 
 export default function Home() {
   return (
-    <div className="home">
+    <div className="home-page">
       {/* HERO */}
-      <div
+      <section
         className="hero"
-        style={{ backgroundImage: `url(${home})` }}
+        style={{ backgroundImage: `url(${hero})` }}
       >
         <div className="hero-overlay">
-          <h1>All Services In One Place</h1>
-          <p>Book trusted professionals easily</p>
-          <button>Book Now</button>
+          <div className="hero-content">
+            <span className="hero-badge">Trusted Services</span>
+            <h1>All Services In One Place</h1>
+            <p>
+              Find, compare and book trusted professionals anytime, anywhere.
+            </p>
+            <div className="hero-actions">
+              <button className="btn-primary">Book Now</button>
+              <button className="btn-outline">Explore Services</button>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* SERVICES */}
-      <section className="services">
-        {services.map((service, index) => (
-          <div className="service-card" key={index}>
-            <img src={service.img} alt={service.title} />
-            <h3>{service.title}</h3>
-          </div>
-        ))}
+      <section className="services-section">
+        <div className="section-header">
+          <h2>Popular Services</h2>
+          <p>Choose what you need and book instantly</p>
+        </div>
+
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div className="service-card" key={index}>
+              <div className="service-image">
+                <img src={service.image} alt={service.title} />
+              </div>
+
+              <div className="service-body">
+                <h3>{service.title}</h3>
+                <button className="btn-secondary">Book Now</button>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );
 }
+
 
