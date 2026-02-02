@@ -1,23 +1,22 @@
-import "./Bookings.css";
+import ServiceCard from "../components/ui/ServiceCard";
+import { bookings } from "../data/bookings";
 
 export default function Bookings() {
   return (
-    <div className="bookings">
-      <h1>My Bookings</h1>
+    <div className="page">
+      <h1>All Bookings</h1>
 
-      <div className="card confirmed">
-        <h3>Haircut</h3>
-        <p>📍 Algiers</p>
-        <p>📅 12 Feb 2026</p>
-        <span>Confirmed</span>
-      </div>
-
-      <div className="card pending">
-        <h3>Massage</h3>
-        <p>📍 Oran</p>
-        <p>📅 20 Feb 2026</p>
-        <span>Pending</span>
-      </div>
+      {bookings.map(item => (
+        <ServiceCard
+          key={item.id}
+          icon={item.icon}
+          title={item.title}
+          location={item.location}
+          date={item.date}
+          status={item.status}
+          color={item.color}
+        />
+      ))}
     </div>
   );
 }
