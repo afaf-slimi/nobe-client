@@ -12,16 +12,64 @@ import express from "../assets/services/express.jpg";
 import vet from "../assets/services/vet.jpg";
 
 export const services = [
-  { id: 1, title: "Transport", image: transport, color: "#2563eb", path: "/bookings/transport" },
-  { id: 2, title: "Hotels", image: hotel, color: "#9333ea", path: "/bookings/hotels" },
-  { id: 3, title: "Car Rental", image: car, color: "#0d9488", path: "/bookings/cars" },
-  { id: 4, title: "Doctors", image: doctor, color: "#dc2626", path: "/bookings/doctors" },
-  { id: 5, title: "Haircut & Beauty", image: haircut, color: "#db2777", path: "/bookings/beauty" },
-  { id: 6, title: "Mechanic", image: mechanic, color: "#f59e0b", path: "/bookings/mechanic" },
-  { id: 7, title: "Home Services", image: home, color: "#16a34a", path: "/bookings/home" },
-  { id: 8, title: "Training", image: training, color: "#4f46e5", path: "/bookings/training" },
-  { id: 9, title: "Events", image: event, color: "#ea580c", path: "/bookings/events" },
-  { id: 10, title: "Gym & Sports", image: gym, color: "#1d4ed8", path: "/bookings/gym" },
-  { id: 11, title: "Express Services", image: express, color: "#64748b", path: "/bookings/express" },
-  { id: 12, title: "Veterinary", image: vet, color: "#15803d", path: "/bookings/vet" }
+  {
+    id: 1,
+    title: "Transport",
+    image: transport,
+  },
+  {
+    id: 2,
+    title: "Hotel",
+    image: hotel,
+  },
+  {
+    id: 3,
+    title: "Car Rental",
+    image: car,
+  },
+  {
+    id: 4,
+    title: "Doctor",
+    image: doctor,
+  },
+  {
+    id: 5,
+    title: "Haircut",
+    image: haircut,
+  },
+  {
+    id: 6,
+    title: "Mechanic",
+    image: mechanic,
+  },
+  {
+    id: 7,
+    title: "Home Services",
+    image: home,
+  },
+  {
+    id: 8,
+    title: "Training",
+    image: training,
+  },
+  {
+    id: 9,
+    title: "Event",
+    image: event,
+  },
+  {
+    id: 10,
+    title: "Gym",
+    image: gym,
+  },
+  {
+    id: 11,
+    title: "Express",
+    image: express,
+  },
+  {
+    id: 12,
+    title: "Veterinary",
+    image: vet,
+  },
 ];
