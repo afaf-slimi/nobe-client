@@ -1,17 +1,17 @@
 import "./ServiceCard.css";
+import { useNavigate } from "react-router-dom";
 
-export default function ServiceCard({ icon, title, location, date, status, color }) {
+export default function ServiceCard({ service }) {
+  const navigate = useNavigate();
+
   return (
-    <div className="service-card" style={{ borderLeft: `4px solid ${color}` }}>
-      <div className="service-icon">{icon}</div>
-
-      <div className="service-content">
-        <h3>{title}</h3>
-        <p>📍 {location}</p>
-        <p>📅 {date}</p>
-      </div>
-
-      <span className={`status ${status}`}>{status}</span>
+    <div
+      className="service-card"
+      style={{ borderColor: service.color }}
+      onClick={() => navigate(service.path)}
+    >
+      <img src={service.image} alt={service.title} />
+      <h3>{service.title}</h3>
     </div>
   );
 }
