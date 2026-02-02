@@ -2,8 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: system-ui, sans-serif;
 }
 
-body {
-  font-family: system-ui, sans-serif;
+h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #22c55e;
+  color: black;
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
 }

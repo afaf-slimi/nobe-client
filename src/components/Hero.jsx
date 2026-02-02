@@ -1,22 +1,18 @@
 import "./Hero.css";
-import heroImage from "../assets/services/hero.jpg";
-import { useNavigate } from "react-router-dom";
+import heroImg from "../assets/services/hero.jpg";
 
 export default function Hero() {
-  const navigate = useNavigate();
-
   return (
     <section
       className="hero"
-      style={{ backgroundImage: `url(${heroImage})` }}
+      style={{ backgroundImage: `url(${heroImg})` }}
     >
       <div className="hero-overlay">
-        <h1>All Services In One Place</h1>
-        <p>Book trusted professionals easily</p>
-
-        <button onClick={() => navigate("/bookings")}>
-          Book Now
-        </button>
+        <h1>Book Trusted Services Easily</h1>
+        <p>Doctors, gyms, hotels & more — all in one place</p>
+        <a href="/services" className="hero-btn">
+          Explore Services
+        </a>
       </div>
     </section>
   );
