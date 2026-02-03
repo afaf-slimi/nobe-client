@@ -1,28 +1,5 @@
-.navbar {
-  height: 70px;
-  background: #0b1220;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 40px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+.main-container {
+  min-height: 100vh;
+  width: 100%;
 }
 
-.navbar a {
-  color: #cbd5e1;
-  margin-left: 20px;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  color: #22c55e;
-}
-
-.page-container {
-  padding: 60px 80px;
-  min-height: calc(100vh - 70px);
-  background: radial-gradient(circle at top, #0f172a, #020617);
-}

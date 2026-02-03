@@ -1,33 +1,41 @@
+import { useState } from "react";
+import "../styles/auth.css";
+
 export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(email, password);
+  };
+
   return (
-    <div style={styles.page}>
-      <form style={styles.card}>
+    <div className="auth-container">
+      <div className="auth-box">
         <h2>Login</h2>
-        <input placeholder="Email" />
-        <input placeholder="Password" type="password" />
-        <button>Login</button>
-      </form>
+
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+
+          <button type="submit">Login</button>
+        </form>
+      </div>
     </div>
   );
 }
 
-const styles = {
-  page: {
-    minHeight: "80vh",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    background: "#020617",
-  },
-  card: {
-    background: "#020617",
-    padding: "40px",
-    borderRadius: "20px",
-    border: "1px solid #1e293b",
-    display: "flex",
-    flexDirection: "column",
-    gap: "15px",
-    width: "320px",
-    color: "white",
-  },
-};

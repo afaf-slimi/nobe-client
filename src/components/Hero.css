@@ -1,47 +1,43 @@
+/* 🔥 هذا هو الحل */
 .hero {
-  height: 85vh;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* مش min-height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* background image */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/services/hero.jpg");
   background-size: cover;
   background-position: center;
-  border-radius: 0 0 40px 40px;
-  position: relative;
+  z-index: 0;
+  transform: scale(1.05);
 }
 
+/* overlay */
 .hero-overlay {
-  height: 100%;
+  position: absolute;
+  inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(2, 6, 23, 0.6),
+    rgba(2, 6, 23, 0.5),
     rgba(2, 6, 23, 0.95)
   );
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 80px;
+  z-index: 1;
+}
+
+/* content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
   color: white;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  opacity: 0.85;
-  margin-bottom: 30px;
-}
-
-.hero-btn {
-  width: fit-content;
-  padding: 12px 28px;
-  background: #2563eb;
-  color: white;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.hero-btn:hover {
-  background: #1d4ed8;
+  max-width: 900px;
+  padding: 40px;
 }

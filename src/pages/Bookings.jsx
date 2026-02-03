@@ -1,22 +1,17 @@
-import ServiceCard from "../components/ui/ServiceCard";
-import { bookings } from "../data/bookings";
-
 export default function Bookings() {
   return (
     <div className="page">
-      <h1>All Bookings</h1>
+      <div className="glass-card" style={{ maxWidth: 480, margin: "auto" }}>
+        <h2>Book a Service</h2>
 
-      {bookings.map(item => (
-        <ServiceCard
-          key={item.id}
-          icon={item.icon}
-          title={item.title}
-          location={item.location}
-          date={item.date}
-          status={item.status}
-          color={item.color}
-        />
-      ))}
+        <input className="neon-input" placeholder="Your Name" />
+        <input className="neon-input" placeholder="Phone Number" />
+        <input className="neon-input" placeholder="Service Type" />
+        <input className="neon-input" type="date" />
+
+        <button className="neon-btn">Confirm Booking</button>
+      </div>
     </div>
   );
 }
+

@@ -1,0 +1,14 @@
+:root {
+  --primary: #1e90ff;
+  --secondary: #00e5ff;
+  --bg-dark: #050b1e;
+  --bg-glass: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(30, 144, 255, 0.6);
+  --text-main: #ffffff;
+  --text-muted: #b8c7ff;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b1a44, #020614);
+  color: var(--text-main);
+}
