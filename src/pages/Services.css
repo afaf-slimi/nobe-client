@@ -1,16 +1,15 @@
 .services-page {
   padding: 80px 6%;
-  min-height: 100vh;
-  background: radial-gradient(circle at top, #0f172a, #020617);
 }
 
 .services-title {
-  font-size: 3rem;
   text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
   margin-bottom: 60px;
-  background: linear-gradient(90deg, #38bdf8, #a78bfa);
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .services-grid {
@@ -19,4 +18,36 @@
   gap: 32px;
 }
 
+.service-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(14px);
+  border-radius: 22px;
+  padding: 26px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #e5e7eb;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
 
