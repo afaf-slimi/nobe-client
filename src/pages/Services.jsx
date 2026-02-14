@@ -1,38 +1,29 @@
+import { Sparkles, Leaf, Wallet } from "lucide-react";
 import "./Services.css";
-import ServiceCard from "../components/ui/ServiceCard";
 
-import doctor from "../assets/services/doctor.jpg";
-import haircut from "../assets/services/haircut.jpg";
-import gym from "../assets/services/gym.jpg";
-import mechanic from "../assets/services/mechanic.jpg";
-import hotel from "../assets/services/hotel.jpg";
-import transport from "../assets/services/transport.jpg";
-import training from "../assets/services/training.jpg";
-import vet from "../assets/services/vet.jpg";
-import event from "../assets/services/event.jpg";
-import express from "../assets/services/express.jpg";
-import home from "../assets/services/home.jpg";
-
-export default function Services() {
+export default function ServicesBottomBar() {
   return (
-    <section className="services-page">
-      <h1 className="services-title">Our Premium Services</h1>
+    <section className="services-bar">
+      <div className="service-item">
+        <Sparkles size={32} />
+        <h4>Cleaning Experts</h4>
+        <p>Professional & trained staff</p>
+      </div>
 
-      <div className="services-grid">
-        <ServiceCard title="Doctor" image={doctor} />
-        <ServiceCard title="Haircut" image={haircut} />
-        <ServiceCard title="Gym Coach" image={gym} />
-        <ServiceCard title="Mechanic" image={mechanic} />
-        <ServiceCard title="Hotel Booking" image={hotel} />
-        <ServiceCard title="Transport" image={transport} />
-        <ServiceCard title="Training" image={training} />
-        <ServiceCard title="Veterinary" image={vet} />
-        <ServiceCard title="Events" image={event} />
-        <ServiceCard title="Express Delivery" image={express} />
-        <ServiceCard title="Home Services" image={home} />
+      <div className="service-item">
+        <Leaf size={32} />
+        <h4>Eco Friendly</h4>
+        <p>Safe & green products</p>
+      </div>
+
+      <div className="service-item">
+        <Wallet size={32} />
+        <h4>Budget Cleaning</h4>
+        <p>Affordable pricing</p>
       </div>
     </section>
   );
 }
+
 
 

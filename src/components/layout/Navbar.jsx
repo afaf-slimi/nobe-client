@@ -1,18 +1,23 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <h1 className="logo">NOBE</h1>
+      <Link to="/" className="logo">
+        NOBE
+      </Link>
 
       <div className="nav-links">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/services">Services</NavLink>
-        <NavLink to="/login">Login</NavLink>
+        <Link to="/services">الخدمات</Link>
+        <Link to="/login">تسجيل الدخول</Link>
+        <Link to="/register">إنشاء حساب</Link>
       </div>
     </nav>
   );
 }
+
+
+
 
 

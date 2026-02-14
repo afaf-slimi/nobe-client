@@ -1,14 +1,10 @@
-export default function ServiceCard({ title, image }) {
+export default function ServiceCard({ image, title }) {
   return (
     <div className="service-card">
       <img src={image} alt={title} />
-      <div className="service-card-content">
-        <h3>{title}</h3>
-        <button className="btn">Book Now</button>
-      </div>
+      <h3>{title}</h3>
     </div>
   );
 }
-
 
 

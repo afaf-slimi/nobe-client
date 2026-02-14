@@ -1,26 +1,135 @@
-.auth {
-  max-width: 400px;
-  margin: 4rem auto;
-  background: #020617;
-  padding: 2rem;
-  border-radius: 12px;
-  border: 1px solid #1e293b;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.auth input {
-  width: 100%;
-  padding: 0.7rem;
-  margin-bottom: 1rem;
-  background: #020617;
-  border: 1px solid #1e293b;
-  color: white;
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f4f9ff, #e9f2ff);
+  font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
-.auth button {
+.login-card {
+  width: 420px;
+  min-height: 560px;
+  padding: 36px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 25px 45px rgba(0, 87, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card h2 {
+  text-align: center;
+  color: #0b5cff;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.login-card p {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.login-input {
   width: 100%;
-  padding: 0.7rem;
-  background: #2563eb;
-  color: white;
+  height: 54px;
+  padding: 14px 44px 14px 14px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  font-size: 15px;
+  border: 1.5px solid #dbe6ff;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #0b5cff;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
   border: none;
-  border-radius: 8px;
+  cursor: pointer;
 }
+
+.toggle-password svg {
+  width: 20px;
+  height: 20px;
+  stroke: #64748b;
+}
+
+.error-text {
+  color: #dc2626;
+  font-size: 13px;
+  text-align: center;
+  margin: 6px 0 10px;
+}
+
+.success-text {
+  color: #16a34a;
+  font-size: 13px;
+  text-align: center;
+  margin: 6px 0 10px;
+}
+
+.login-btn {
+  height: 46px;
+  border-radius: 14px;
+  border: none;
+  background: #0b5cff;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.google-btn {
+  margin-top: 12px;
+  height: 46px;
+  border-radius: 14px;
+  border: 1.5px solid #dbe6ff;
+  background: #fff;
+  font-weight: 500;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login-links {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.login-links a {
+  color: #0b5cff;
+  text-decoration: none;
+}
+
+
+

@@ -1,0 +1,90 @@
+/* =========================
+   CTA SECTION – CLEAN WHITE
+   ========================= */
+
+.cta-section {
+  background-color: #ffffff;
+  padding: 100px 20px 80px;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+}
+
+.cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Title */
+.cta-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0f172a; /* dark navy */
+  margin-bottom: 16px;
+}
+
+/* Description */
+.cta-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 36px;
+}
+
+/* Buttons wrapper */
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Primary button */
+.cta-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 14px 34px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cta-primary:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* Secondary button */
+.cta-secondary {
+  background-color: transparent;
+  color: #2563eb;
+  padding: 14px 34px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.5px solid #2563eb;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cta-secondary:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* =========================
+   FOOTER COPYRIGHT
+   ========================= */
+
+.footer {
+  margin-top: 100px;
+  padding-top: 30px;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+

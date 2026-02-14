@@ -1,0 +1,66 @@
+.accessibility-section {
+  padding: 120px 20px;
+  background: #ffffff;
+}
+
+.accessibility-header {
+  max-width: 720px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.accessibility-header h2 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.accessibility-header p {
+  color: #475569;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.accessibility-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 36px;
+}
+
+.access-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 34px 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+}
+
+.access-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.access-card svg {
+  width: 42px;
+  height: 42px;
+  stroke: #2563eb;
+  fill: none;
+  stroke-width: 1.6;
+  margin-bottom: 18px;
+}
+
+.access-card h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.access-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #64748b;
+}

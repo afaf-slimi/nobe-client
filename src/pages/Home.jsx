@@ -1,28 +1,27 @@
-import heroImg from "../assets/services/hero.jpg";
-import "./Home.css";
+import Hero from "../components/ui/Hero";
+import ServicesSection from "../components/ui/ServicesSection";
+import PerksSection from "../components/ui/PerksSection";
+import AccessibilitySection from "../components/ui/AccessibilitySection";
+import PricingSection from "../components/ui/PricingSection";
+import CTASection from "../components/ui/CTASection";
+import Footer from "../components/ui/Footer";
 
 export default function Home() {
   return (
     <>
-      <section
-        className="hero"
-        style={{ backgroundImage: `url(${heroImg})` }}
-      >
-        <div className="hero-overlay" />
-        <div className="hero-content">
-          <h1>All Services In One Place</h1>
-          <p>Book professional services easily & fast</p>
-          <div className="hero-actions">
-            <a href="/services" className="neon-btn">Explore Services</a>
-            <a href="/booking" className="ghost-btn">Book Now</a>
-          </div>
-        </div>
-      </section>
+      <Hero />
+      <ServicesSection />
 
-      <div className="page">
-        {/* محتوى إضافي إذا حبيتي */}
-      </div>
+      {/* 👇 هنا تبدأ الصفحة “الحيّة” */}
+      <PerksSection />
+      <AccessibilitySection />
+      <PricingSection />
+      <CTASection />
+      <Footer />
     </>
   );
 }
+
+
+
 
